@@ -1,0 +1,125 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 0 30px 20px;
+  max-width: 430px;
+  margin: 0 auto;
+  background-color: var(--color-primary);
+  position: relative;
+}
+
+.capa {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 0;
+}
+
+.capa::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+
+  /* degradê do transparente para a cor de fundo */
+  background: linear-gradient(
+    to bottom,
+    rgba(156, 125, 172, 0) 0%,
+    var(--color-primary) 100%
+  );
+
+  z-index: 1;
+}
+
+.capa img {
+  width: 100%;
+  display: block;
+}
+
+.profile {
+  padding: 110px 0 0;
+  z-index: 2;
+}
+
+.profile img {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  border: 2px solid white;
+  object-fit: cover;
+  object-position: center 20%;
+}
+
+.profile h1 {
+  font-family: var(--font-title);
+  font-size: 26px;
+  margin: 0px;
+  letter-spacing: 2px;
+  font-weight: 400;
+}
+
+.profile h2 {
+  margin-top: 0;
+  letter-spacing: 2px;
+  font-size: 14px;
+}
+
+.profile p {
+  max-width: 350px;
+  margin: 10px 0;
+}
+
+.socials {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 5px;
+}
+
+.socials-btn {
+  font-size: 1.6rem;
+  cursor: pointer;
+  background: transparent;
+  border: none;
+  transition: 0.2s;
+  color: #fff;
+  text-decoration: none;
+  height: 25px;
+}
+
+.socials-btn:hover {
+  transform: scale(1.03);
+}
+
+.buttons {
+  width: 100%;
+  max-width: 350px;
+  display: flex;
+  flex-direction: column;
+}
+
+.btn {
+  width: 100%;
+  padding: 16px;
+  margin: 10px 0;
+  border-radius: 40px;
+  border: none;
+  font-size: 14px;
+  letter-spacing: 3px;
+  cursor: pointer;
+  background: #e9e4ea;
+  transition: 0.2s;
+  color: #000;
+  text-decoration: none;
+}
+
+.btn:hover {
+  transform: scale(1.03);
+}
+
+footer {
+  margin-top: 40px;
+  font-size: 0.9rem;
+  opacity: 0.8;
+}

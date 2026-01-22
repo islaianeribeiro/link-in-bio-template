@@ -1,0 +1,41 @@
+:root {
+  /* 🎨 Cores base */
+  --color-white: #ffffff;
+  --color-black: #000000;
+
+  /* 🎨 Cores principais (brand) */
+  --color-primary: #9c7dac;
+  --color-primary-light: #ac8abe;
+  --color-primary-soft: #fbf5ff;
+  --color-primary-dark: #463947;
+
+  /* 📝 Texto */
+  --text-primary: var(--color-primary-dark);
+  --text-secondary: #6b5a6c;
+  --text-inverse: var(--color-white);
+
+  /* 🌤️ Backgrounds */
+  --bg-main: var(--color-white);
+  --bg-card: var(--color-primary-soft);
+  --bg-dark: var(--color-primary-dark);
+
+  /* 🔤 Fontes */
+  --font-title: "Bree Serif", serif;
+  --font-body: "DM Sans", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-body);
+  background: var(--bg-main);
+  color: var(--color-white);
+}
+
+h1 {
+  font-family: var(--font-title);
+}
