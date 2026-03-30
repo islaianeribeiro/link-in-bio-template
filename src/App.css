@@ -5,6 +5,7 @@
   text-align: center;
   padding: 0 30px 20px;
   max-width: 430px;
+  min-height: 100vh;
   margin: 0 auto;
   background-color: var(--color-primary);
   position: relative;
@@ -39,7 +40,7 @@
 }
 
 .profile {
-  padding: 110px 0 0;
+  padding: 100px 0 0;
   z-index: 2;
 }
 
@@ -118,8 +119,106 @@
   transform: scale(1.03);
 }
 
+.overlay {
+  position: fixed;
+  margin: 0 auto;
+  inset: 0;
+  background: rgb(70 57 71 / 0%);
+  display: flex;
+  z-index: 3;
+  max-width: 430px;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.3s ease;
+}
+
+.overlay.open {
+  background: rgb(70 57 71 / 80%);
+}
+
+.overlay.closed {
+  background: rgb(70 57 71 / 0%);
+}
+
+/* MODAL */
+
+.modal {
+  background: white;
+  padding: 20px;
+  border-radius: 16px;
+  max-width: 400px;
+  width: 100%;
+  color: #000;
+  position: relative;
+  margin: 8px;
+
+  opacity: 0;
+  transform: translateY(20px) scale(0.95);
+  transition: all 0.3s ease;
+}
+
+.modal.open {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+}
+
+.modal.closed {
+  opacity: 0;
+  transform: translateY(20px) scale(0.95);
+}
+
+.close-btn {
+  position: absolute;
+  top: 9px;
+  right: 10px;
+  font-size: 26px;
+  border: none;
+  background: transparent;
+  color: #000000;
+  display: flex;
+}
+
+.modal h2 {
+  margin-block: 10px;
+  text-align: center;
+  font-size: 18px;
+  color: var(--color-primary);
+  text-transform: uppercase;
+}
+
+.modal-item h3 {
+  margin-top: 8px;
+  font-size: 1rem;
+  color: var(--color-primary);
+  text-align: start;
+}
+
+.modal-item p {
+  color: #000;
+  font-size: 15px;
+  text-align: justify;
+}
+
+.cta p {
+  margin: 12px 0;
+  font-style: italic;
+  font-size: 15px;
+}
+
+.cta-btn {
+  font-size: 14px;
+  cursor: pointer;
+  background: var(--color-primary);
+  border: 1px solid var(--color-primary-dark);
+  transition: 0.2s;
+  color: #fff;
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 30px;
+}
+
 footer {
-  margin-top: 40px;
+  margin-top: 24px;
   font-size: 0.9rem;
   opacity: 0.8;
 }
