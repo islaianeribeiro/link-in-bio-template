@@ -13,7 +13,10 @@ function App() {
   return (
     <div className="container">
       <div className="capa">
-        <img src="/capa.png" alt="Islaiane" />
+        <img
+          src="/capa.png"
+          alt="Imagem de código em tela representando desenvolvimento web"
+        />
       </div>
       <Profile />
       <SocialLinks />

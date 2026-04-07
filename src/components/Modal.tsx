@@ -39,6 +39,7 @@ export default function Modal({ modal, onClose }: Props) {
       >
         <Button
           className="close-btn"
+          arialabel="Fechar modal"
           onClick={handleClose}
           icon={<IoMdClose />}
         />

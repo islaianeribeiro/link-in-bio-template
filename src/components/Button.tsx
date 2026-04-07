@@ -4,6 +4,7 @@ type BaseProps = {
   label?: string;
   className: string;
   icon?: ReactNode;
+  arialabel?: string;
 };
 
 type ButtonAsButton = BaseProps & {
@@ -19,11 +20,11 @@ type ButtonAsLink = BaseProps & {
 type Props = ButtonAsButton | ButtonAsLink;
 
 export default function Button(props: Props) {
-  const { label, className, icon } = props;
+  const { label, className, icon, arialabel } = props;
 
   if ("href" in props) {
     return (
-      <a href={props.href} className={className}>
+      <a href={props.href} aria-label={arialabel} className={className}>
         {label}
         {icon}
       </a>
@@ -31,7 +32,11 @@ export default function Button(props: Props) {
   }
 
   return (
-    <button onClick={props.onClick} className={className}>
+    <button
+      onClick={props.onClick}
+      aria-label={arialabel}
+      className={className}
+    >
       {label}
       {icon}
     </button>

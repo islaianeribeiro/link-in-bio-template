@@ -1,14 +1,8 @@
 :root {
   /* 🎨 Cores principais (brand) */
   --color-primary: #9c7dac;
-  --color-primary-light: #ac8abe;
   --color-primary-soft: #fbf5ff;
   --color-primary-dark: #463947;
-
-  /* 🌤️ Backgrounds */
-  --bg-main: #fff;
-  --bg-card: var(--color-primary-soft);
-  --bg-dark: var(--color-primary-dark);
 
   /* 🔤 Fontes */
   --font-title: "Bree Serif", serif;
@@ -23,7 +17,7 @@
 
 body {
   font-family: var(--font-body);
-  background: var(--bg-main);
+  background: var(--color-primary-soft);
   color: #fff;
 }
 
