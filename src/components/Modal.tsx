@@ -15,13 +15,15 @@ export default function Modal({ modal, onClose }: Props) {
 
   useEffect(() => {
     if (modal) {
-      setIsVisible(true);
+      requestAnimationFrame(() => {
+        setIsVisible(true);
+      });
     }
   }, [modal]);
 
   const handleClose = () => {
     setIsVisible(false);
-    setTimeout(onClose, 300); // tempo igual ao CSS
+    setTimeout(onClose, 300);
   };
 
   if (!modal) return null;

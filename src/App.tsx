@@ -4,6 +4,7 @@ import Modal from "./components/Modal";
 import Profile from "./components/Profile";
 import SocialLinks from "./components/SocialLinks";
 import Button from "./components/Button";
+import capa from "./assets/capa.png";
 
 type ModalType = "services" | "diferentials" | null;
 
@@ -14,7 +15,7 @@ function App() {
     <div className="container">
       <div className="capa">
         <img
-          src="/capa.png"
+          src={capa}
           alt="Imagem de código em tela representando desenvolvimento web"
         />
       </div>
