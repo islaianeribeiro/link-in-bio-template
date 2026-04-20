@@ -5,30 +5,35 @@ export const modalContent = {
       {
         title: "Criação de Sites Profissionais",
         description:
-          "Desenvolvo sites completos com informações, fotos, serviços e formas de contato, ajudando seu negócio a transmitir credibilidade e atrair clientes.",
+          "Desenvolvo sites completos para apresentar seu negócio com mais credibilidade e facilitar o contato com clientes.",
       },
       {
         title: "Landing Pages (Páginas de Vendas)",
         description:
-          "Crio páginas focadas em apresentar um serviço ou produto, ideais para promoções, campanhas e captação de clientes.",
+          "Páginas focadas em divulgar serviços, promoções ou campanhas, com objetivo de atrair mais clientes.",
       },
       {
         title: "Link na Bio Personalizado",
         description:
-          "Substitua o Linktree por uma página com a identidade do seu negócio, sem mensalidade e com mais profissionalismo.",
+          "Uma página com a identidade do seu negócio, reunindo seus links em um só lugar, sem mensalidade.",
       },
       {
         title: "Melhorias e Otimização de Sites",
         description:
-          "Ajusto sites existentes para deixá-los mais rápidos, organizados e fáceis de usar, melhorando a experiência do cliente.",
+          "Ajustes para deixar seu site mais rápido, organizado e fácil de usar.",
+      },
+      {
+        title: "Soluções Personalizadas",
+        description:
+          "Desenvolvo soluções sob medida para demandas específicas, tanto para negócios quanto para uso pessoal.",
       },
       {
         title: "Atualizações e Suporte",
         description:
-          "Realizo alterações, atualizações de conteúdo e melhorias sempre que você precisar.",
+          "Alterações e melhorias sempre que você precisar, de forma simples e rápida.",
       },
     ],
-    text: "Precisa de algo assim para o seu negócio?",
+    text: "Precisa de algo assim para seu projeto?",
     btn: "Fale Comigo no WhatsApp",
   },
   diferentials: {
@@ -37,35 +42,35 @@ export const modalContent = {
       {
         title: "Design Personalizado",
         description:
-          "Seu site é feito de acordo com a identidade do seu negócio, sem modelos genéricos.",
+          "Cada projeto é desenvolvido de acordo com a sua necessidade, sem modelos genéricos.",
       },
       {
-        title: "Funciona Perfeitamente no Celular ",
+        title: "Soluções Sob Medida",
         description:
-          "Layout adaptado para todos os dispositivos, garantindo uma boa experiência para seus clientes.",
+          "Atendo desde sites até demandas específicas, criando soluções adaptadas para cada situação.",
       },
       {
-        title: "Sem Mensalidade (para Links na Bio)  ",
+        title: "Funciona Perfeitamente no Celular",
         description:
-          "Você não precisa pagar mensalmente para manter sua página no ar.",
+          "Seu site adaptado para celular, onde a maioria dos clientes acessa.",
       },
       {
-        title: "Mais Profissionalismo para o seu Negócio",
+        title: "Pagamento Único",
         description:
-          "Um site bem feito transmite confiança e ajuda a atrair mais clientes.",
+          "Você paga uma vez pelo projeto, sem mensalidades obrigatórias.",
       },
       {
-        title: "Entrega Rápida e Comunicação Fácil",
+        title: "Atendimento Direto e Comunicação Simples ",
         description:
-          "Atendimento direto, com acompanhamento durante todo o projeto.",
+          "Falo direto com você, sem complicação e com acompanhamento durante o projeto.",
       },
       {
         title: "Foco em Resultado",
         description:
-          "Mais do que um site bonito, entrego uma solução que ajuda seu negócio a crescer.",
+          "Mais do que um site bonito, uma solução pensada para facilitar seu contato e atrair clientes.",
       },
     ],
-    text: "Vamos criar seu site profissional?",
+    text: "Vamos tirar sua ideia do papel?",
     btn: "Solicitar Orçamento",
   },
 };
